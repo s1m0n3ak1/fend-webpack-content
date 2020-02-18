@@ -1,0 +1,13 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    width: 600px / 960px * 100%;
+    @include transform(translate3d(0,0,0));
+}
